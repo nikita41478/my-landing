@@ -1,64 +1,108 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-black text-slate-50">
+      <main className="mx-auto flex min-h-screen max-w-4xl flex-col justify-center gap-12 px-6 py-16 md:px-10 lg:px-0">
+        <section className="space-y-6">
+          <p className="inline-flex items-center rounded-full border border-emerald-500/40 bg-slate-950/80 px-4 py-1 text-xs font-medium uppercase tracking-[0.18em] text-emerald-200/90 shadow-[0_0_48px_rgba(16,185,129,0.7)]">
+            <span className="mr-2 h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_16px_rgba(52,211,153,1)]" />
+            начинающий разработчик • вайбкодинг
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+
+          <h1 className="text-4xl font-semibold tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
+            Делаю свои первые пет‑проекты
+            <span className="relative mt-1 block max-w-xs text-sm font-normal uppercase tracking-[0.22em] text-emerald-300/80">
+              медленно, но с кайфом
+              <span className="pointer-events-none absolute inset-x-4 -bottom-1 h-2 rounded-full bg-emerald-400/40 blur-[10px]" />
+            </span>
+          </h1>
+
+          <p className="max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">
+            Я учусь фронтенду и вайбкодингу: пробую идеи, играюсь с Tailwind и
+            анимациями, постепенно собираю портфолио. Здесь можно посмотреть,
+            чем я сейчас занимаюсь.
+          </p>
+
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://t.me/nsivkov"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
+            className="group relative mt-4 inline-flex items-center gap-2 overflow-hidden rounded-full border border-emerald-400/70 bg-emerald-500/95 px-6 py-2.5 text-sm font-medium text-slate-950 shadow-[0_0_52px_rgba(16,185,129,0.9)] transition hover:-translate-y-0.5 hover:border-emerald-300 hover:bg-emerald-400"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-white/20 via-white/60 to-transparent opacity-0 transition group-hover:translate-x-0 group-hover:opacity-100" />
+            <span>Связаться</span>
+            <span className="text-base transition group-hover:translate-x-0.5">
+              →
+            </span>
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
+            Навыки, которые я прокачиваю
+          </h2>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)]">
+              <div className="mb-2 flex items-center justify-between">
+                <span className="text-sm font-semibold text-slate-50">
+                  Frontend & UI
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.22em] text-slate-500">
+                  в процессе
+                </span>
+              </div>
+              <p className="text-sm text-slate-300/90">
+                HTML, современный CSS, адаптивная вёрстка, базовый JavaScript,
+                React / Next.js.
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)]">
+              <div className="mb-2 flex items-center justify-between">
+                <span className="text-sm font-semibold text-slate-50">
+                  Tailwind & вайбкодинг
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.22em] text-emerald-300/80">
+                  фокус
+                </span>
+              </div>
+              <p className="text-sm text-slate-300/90">
+                Быстрая сборка интерфейсов, эксперименты с цветами, градиентами,
+                тенями и небольшими анимациями.
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)]">
+              <div className="mb-2 flex items-center justify-between">
+                <span className="text-sm font-semibold text-slate-50">
+                  Инструменты разработчика
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.22em] text-slate-500">
+                  база
+                </span>
+              </div>
+              <p className="text-sm text-slate-300/90">
+                Git, GitHub, VS Code / Cursor, работа с консолью, настройка
+                проектов на Next.js.
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)]">
+              <div className="mb-2 flex items-center justify-between">
+                <span className="text-sm font-semibold text-slate-50">
+                  Mindset разработчика
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.22em] text-slate-500">
+                  важно
+                </span>
+              </div>
+              <p className="text-sm text-slate-300/90">
+                Учусь не бояться кода, пробовать идеи, рефакторить и выкладывать
+                даже маленькие проекты.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
