@@ -44,10 +44,10 @@ export default function Home() {
           </h2>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)]">
+            <div className="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)] transition-all duration-300 ease-out hover:shadow-[0_0_24px_rgba(0,255,136,0.35),0_0_48px_rgba(0,255,136,0.15)]">
               <div className="mb-2 flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
-                  <Monitor className="h-6 w-6 shrink-0 text-emerald-400" size={24} />
+                  <Monitor className="h-6 w-6 shrink-0 text-emerald-400 transition-colors duration-300 group-hover:text-[#00FF88]" size={24} />
                   <span className="text-sm font-semibold text-slate-50">
                     Frontend & UI
                   </span>
@@ -62,10 +62,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)]">
+            <div className="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)] transition-all duration-300 ease-out hover:shadow-[0_0_24px_rgba(0,255,136,0.35),0_0_48px_rgba(0,255,136,0.15)]">
               <div className="mb-2 flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
-                  <Paintbrush className="h-6 w-6 shrink-0 text-emerald-400" size={24} />
+                  <Paintbrush className="h-6 w-6 shrink-0 text-emerald-400 transition-colors duration-300 group-hover:text-[#00FF88]" size={24} />
                   <span className="text-sm font-semibold text-slate-50">
                     Tailwind & вайбкодинг
                   </span>
@@ -80,10 +80,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)]">
+            <div className="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)] transition-all duration-300 ease-out hover:shadow-[0_0_24px_rgba(0,255,136,0.35),0_0_48px_rgba(0,255,136,0.15)]">
               <div className="mb-2 flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
-                  <Wrench className="h-6 w-6 shrink-0 text-emerald-400" size={24} />
+                  <Wrench className="h-6 w-6 shrink-0 text-emerald-400 transition-colors duration-300 group-hover:text-[#00FF88]" size={24} />
                   <span className="text-sm font-semibold text-slate-50">
                     Инструменты разработчика
                   </span>
@@ -98,10 +98,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)]">
+            <div className="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950/80 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.85)] transition-all duration-300 ease-out hover:shadow-[0_0_24px_rgba(0,255,136,0.35),0_0_48px_rgba(0,255,136,0.15)]">
               <div className="mb-2 flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
-                  <Lightbulb className="h-6 w-6 shrink-0 text-emerald-400" size={24} />
+                  <Lightbulb className="h-6 w-6 shrink-0 text-emerald-400 transition-colors duration-300 group-hover:text-[#00FF88]" size={24} />
                   <span className="text-sm font-semibold text-slate-50">
                     Mindset разработчика
                   </span>
